@@ -1,0 +1,22 @@
+table{
+    border: 10px solid white;
+    text-align: center;
+    font-size: 50px;
+}
+
+td {
+    background-color: #d6d6d6;
+    width: 60px;
+}
+
+#display{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+
+th{
+    background-color: #fe940f;
+    color: white;
+    width: 60px;
+}
