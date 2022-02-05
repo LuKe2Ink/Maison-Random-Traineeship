@@ -13,6 +13,7 @@ td {
     background-color: black;
     color: rgb(255, 255, 255);
     text-align: right;
+    font-weight: normal;
 }
 
 th{
