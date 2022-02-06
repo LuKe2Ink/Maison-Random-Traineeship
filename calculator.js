@@ -3,7 +3,7 @@ function result() {
 }
 
 function equal() {
-    if(index == 2){
+    if(index == 1){
         return true;
     } else {
         return false;
@@ -22,13 +22,12 @@ function reset() {
 function operator(operation){
     if(!alreadyClicked){
         alreadyClicked = true;
-        index++;
         if(!equal()){
             operate=operation;
             $("#display").text(0);
+            index++;
         } else {
             number[0] = result();
-            console.log(number[0]);
             number[1] = 0;
             operate=operation;
             $("#display").text(number[0]);
@@ -95,6 +94,11 @@ $(document).ready(function(){
     });
 
     $("#equal").click(function(){
-
+        if(equal()){
+            number[0] = result();
+            number[1] = 0;
+            index=0;
+            $("#display").text(number[0]);
+        }
     });
 });
